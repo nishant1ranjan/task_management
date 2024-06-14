@@ -31,9 +31,9 @@ class TasksController < ApplicationController
     
     service = GoogleCalendarService.new
     service.add_event(@task)
-    redirect_to @task, notice: 'Event added to Google Calendar.'
+    redirect_to task_path, notice: 'Event added to Google Calendar.'
   rescue StandardError => e
-    redirect_to @task, alert: "Failed to add event to Google Calendar: #{e.message}"
+    redirect_to task_path, alert: "Failed to add event to Google Calendar: #{e.message}"
   end 
 
   # POST /tasks or /tasks.json
