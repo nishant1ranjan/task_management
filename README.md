@@ -24,6 +24,8 @@ Make sure redis is running by command "redis-cli ping"
 * Install dependies: bundle install
 
 * Create db: RAILS_ENV=development rails db:create
+* Create test db: RAILS_ENV=test rails db:create
+
 * Create active storage for profile picture 
     rails active_storage:install
 * Run database migrations: rails db:migrate
