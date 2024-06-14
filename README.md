@@ -67,3 +67,5 @@ Google calender is implemented by using service object design pattern inside app
 
 To run rails server and sidekiq server in background you can use "nohup" command but it's disadvantage is that the server will be killed on syatem shut down.Use systemctl to avoid the situation you can finnd more details here:
 https://medium.com/the-blockchain-artist/running-ruby-on-rails-5-application-as-systemctl-6fbe961e72dc
+
+* Rspec is being used for testing you can visit spec folder to view the test cases.You can also rin the test cases using "bundle exec rspec".
